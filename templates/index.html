@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="chat-container">
+
+        <header>
+            <h1>Gemini AI Chatbot</h1>
+            <p>Your friendly AI assistant</p>
+        </header>
+
+        <div id="chat-box">
+            <div class="bot-message">
+                Hello! 👋 I'm your Gemini AI assistant. How can I help you today?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Type your message..."
+                autocomplete="off"
+            >
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
