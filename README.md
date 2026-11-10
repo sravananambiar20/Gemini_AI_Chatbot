@@ -31,7 +31,7 @@ Gemini_AI_Chatbot/
 ├── app.py
 ├── test_api.py
 ├── requirements.txt
-├── .env
+├── .env.example
 ├── .gitignore
 │
 ├── templates/
